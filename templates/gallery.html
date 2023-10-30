@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GALLERY</title>
+</head>
+<body>
+
+<a href="{% url 'myhomepage' %}">HOME</a>
+<a href="{% url 'aboutus' %}">ABOUT US</a>
+<a href="{% url 'contactus' %}">CONTACT US</a>
+<a href="{% url 'services' %}">SERVICES</a>
+
+<h2>Some of our Photos</h2>
+<img src="{% static 'images/cinn.rolls.jpeg' %}" alt="">
+</body>
+</html>
